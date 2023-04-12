@@ -1,10 +1,17 @@
 .status {
-  background: #456bd9;
+  /* background: #456bd9; */
   border-radius: 50%;
   height: 20px;
   width: 20px;
   display: block;
   position: relative;
+}
+.online {
+  background-color: rgba(77, 77, 238, 0.582);
+}
+
+.offline {
+  background-color: rgba(245, 27, 27, 0.952);
 }
 
 .avatar {
