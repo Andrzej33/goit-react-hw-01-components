@@ -1,0 +1,16 @@
+.status {
+  background: #456bd9;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: block;
+  position: relative;
+}
+
+.avatar {
+  margin: auto;
+}
+
+.friend {
+  margin: auto;
+}

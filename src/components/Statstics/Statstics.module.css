@@ -1,0 +1,26 @@
+.statistics {
+  background-color: darkgrey;
+}
+.title {
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.statList {
+  margin: auto;
+  display: flex;
+}
+
+.item {
+  margin: auto;
+  list-style: none;
+}
+
+.label {
+  margin: auto;
+}
+
+.percentage {
+  margin: auto;
+}
