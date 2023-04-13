@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { ProfileWrapper, Description } from './Profile.styled';
+import { ProfileWrapper, Description, Social } from './Profile.styled';
 
 export const ProfileCard = ({
   description: {
@@ -19,7 +19,7 @@ export const ProfileCard = ({
         <p className="location">{location}</p>
       </Description>
 
-      <ul>
+      <Social>
         <li>
           <span className="label">Followers</span>
           <span className="quantity">{followers}</span>
@@ -32,7 +32,7 @@ export const ProfileCard = ({
           <span className="label">Likes</span>
           <span className="quantity">{likes}</span>
         </li>
-      </ul>
+      </Social>
     </ProfileWrapper>
   );
 };

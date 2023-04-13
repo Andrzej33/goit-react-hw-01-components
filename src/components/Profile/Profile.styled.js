@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const ProfileWrapper = styled.div`
-  margin: 1rem;
+  margin: auto;
+  // margin: 1rem;
   width: 300px;
   height: 500px;
   padding: 0.5rem 1rem;
@@ -24,13 +25,29 @@ export const Description = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  .name {
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  .location {
+    font-weight: 600;
+  }
 `;
 
-// export const ProfileWrapper = styled.div`
-//   background-color: 'orange';
-// `;
-
-// const Wrapper = styled.section`
-//   padding: 4em;
-//   background: papayawhip;
-// `;
+export const Social = styled.ul`
+  background-color: cadetblue;
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .quantity {
+      color: #f9f9f9;
+    }
+  }
+`;
