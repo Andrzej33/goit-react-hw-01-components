@@ -1,4 +1,4 @@
-import { ProfileCard } from './Profile';
+import { ProfileCard } from './Profile/Profile';
 import user from '../user.json';
 import friends from '../friends.json';
 import data from '../data.json';
@@ -6,21 +6,17 @@ import transactions from '../transactions.json';
 import { Statsics } from './Statstics/Statstics';
 import { FriendList } from './FriendList/FriendList';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
+import { GlobalStyle } from './GlobalStyle';
+import { Layout } from './Layout/Layout';
 
 export const App = () => {
   return (
-    <div
-    // style={{
-    //   height: '100vh',
-    //   justifyContent: 'center',
-    //   alignItems: 'center',
-    //   fontSize: 30,
-    // }}
-    >
+    <Layout>
       <ProfileCard description={user} />
       <Statsics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory transactions={transactions} />
-    </div>
+      <GlobalStyle />
+    </Layout>
   );
 };
